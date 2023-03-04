@@ -1,0 +1,60 @@
+[04-Dec-2020 02:26:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[04-Dec-2020 15:57:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[04-Dec-2020 17:44:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[04-Dec-2020 17:44:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[08-Dec-2020 23:12:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[09-Dec-2020 01:29:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[09-Dec-2020 01:40:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[10-Dec-2020 18:07:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[10-Dec-2020 18:07:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[10-Dec-2020 18:08:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[11-Dec-2020 20:33:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[17-Dec-2020 16:06:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[29-Dec-2020 21:00:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[05-Jan-2021 23:53:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71
+[06-Jan-2021 17:44:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getTimestamp() on boolean in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/clinicadelalma/public_html/erasoft/minibodegas/plugins/pdf/indexs.php on line 71

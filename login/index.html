@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="assets/brand/icono.png">
+  <title>Sistema CarWash</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+  <form class="form-signin" id="frmLogin" onsubmit="iniciarSesion(event.preventDefault())">
+    <img class="mb-4" src="assets/brand/icono.png" alt="" width="120" height="120">
+    <h1 class="h3 mb-3 font-weight-normal">Inicio de Sesión</h1>
+    <label for="inputEmail" class="sr-only">Cédula</label>
+    <input type="text" id="inputCedula" class="form-control" placeholder="Número de cédula"
+      onkeypress="return valideKey(event);" maxlength="13" required autofocus>
+    <label for="inputPassword" class="sr-only">Contraseña</label>
+    <input type="password" id="inputClave" class="form-control" placeholder="Contraseña" required>
+    <button class="btn btn-lg btn-success btn-block" type="submit">Ingresar</button>
+    <a href="#" onclick="recuperarPassword()">Recuperar Contraseña</a>
+    <p class="mt-5 mb-3 text-muted">&copy; 2022-2025</p>
+  </form>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registro de Cliente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="frmRegistro" onsubmit="registroCliente(event.preventDefault())">
+            <div class="form-group">
+              <label for="Nombre">Nombres:</label>
+              <input type="text" class="form-control" name="nombre" id="nombreUs" required>
+            </div>
+            <div class="form-group">
+              <label for="Apellido">Apellidos:</label>
+              <input type="text" class="form-control" name="apellido" id="apellidoUs" required>
+            </div>
+            <div class="form-group">
+              <label for="Cedula">Cédula de identidad o RUC:</label>
+              <input type="text" class="form-control" name="cedula" id="cedulaUs" required>
+            </div>
+            <div class="form-group">
+              <label for="Telefono">Teléfono:</label>
+              <input type="text" class="form-control" name="telefono" id="telefonoUs">
+            </div>
+            <div class="form-group">
+              <label for="Celular">Celular:</label>
+              <input type="text" class="form-control" name="celular" id="celularUs" required>
+            </div>
+            <div class="form-group">
+              <label for="Direccion">Dirección:</label>
+              <input type="text" class="form-control" name="direccion" id="direccionUs" required>
+            </div>
+            <div class="form-group">
+              <label for="claveUs">Contraseña:</label>
+              <input id="claveUs" type="text" class="form-control" aria-describedby="basic-addon1" value="carwash123"
+                required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" form="frmRegistro">Guardar</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../recursos/jquery/jquery.min.js"></script>
+  <script src="../recursos/sweetalert2/sweetalert2.all.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

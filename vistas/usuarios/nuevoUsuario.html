@@ -1,0 +1,56 @@
+<div class="card">
+    <div class="card-header" style="background-color: #273b7a; color: white;">
+        <span><i class="fa fa-user-plus"></i>&nbsp;&nbsp;Nuevo Usuario</span>        
+    </div>
+    <form onsubmit="guardarUsuario(event.preventDefault())">
+        <div class="card-body">
+            <center><img src="dist/img/usuarios.png" width="120px" height="120px"></center>
+            <h5 class="text-center"><br>Porfavor ingrese toda la información requerida para el ingreso del usuario</h5>
+            <div class="container">
+                <div class="form-group">
+                    <label for="Nombre">Nombres:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombreUs" onkeypress="return soloLetras(event)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Apellido">Apellidos:</label>
+                    <input type="text" class="form-control" name="apellido" id="apellidoUs" onkeypress="return soloLetras(event)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Cedula">Cédula de identidad o RUC:</label>
+                    <input type="text" class="form-control" name="cedula" id="cedulaUs" onkeypress="return soloNumeros(event)" required>
+                </div>                
+                <div class="form-group">
+                    <label for="Telefono">Teléfono:</label>
+                    <input type="text" class="form-control" name="telefono" id="telefonoUs" onkeypress="return soloNumeros(event)">
+                </div>
+                <div class="form-group">
+                    <label for="Celular">Celular:</label>
+                    <input type="text" class="form-control" name="celular" id="celularUs" onkeypress="return soloNumeros(event)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Direccion">Dirección:</label>
+                    <input type="text" class="form-control" name="direccion" id="direccionUs" required>
+                </div>                
+                <div class="form-group">
+                    <label for="privilegio">Rol del Usuario:</label>
+                    <select class="form-control" id="rolUs" name="privilegio" required>
+                        <option value="2" selected>Empleado</option>
+                        <option value="1">Administrador</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="claveUs">Contraseña:</label>
+                    <input id="claveUs" type="text" class="form-control" aria-describedby="basic-addon1" value="carwash123" required>                    
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center>
+                <button type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar Usuario</button>
+                <button id="limpiarUs" type="reset" class="btn btn-warning"><i class="fa fa-trash"></i>&nbsp;&nbsp;Limpiar</button>
+            </center>
+        </div>
+    </form>
+</div>
+
+<script src="controladores/usuarios/nuevoUsuario.js"></script>

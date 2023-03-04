@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-header" style="background-color: #273b7a; color: white;">
+        <span><i class="fa fa-user"></i>&nbsp;&nbsp;Perfil</span>        
+    </div>
+    <form onsubmit="guardarPerfil(event.preventDefault())">
+        <div class="card-body">
+            <center><img src="dist/img/perfil.png" width="120px" height="120px"></center>
+            <h5 class="text-center"><br>Información personal del Usuario</h5>
+            <div class="container">
+                <div class="form-group">
+                    <label for="Nombre">Nombres:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombrePerfil" onkeypress="return soloLetras(event)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Apellido">Apellidos:</label>
+                    <input type="text" class="form-control" name="apellido" id="apellidoPerfil" onkeypress="return soloLetras(event)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Cedula">Cédula de identidad o RUC:</label>
+                    <input type="text" class="form-control" name="cedula" id="cedulaPerfil" onkeypress="return soloNumeros(event)" disabled>
+                </div>                
+                <div class="form-group">
+                    <label for="Telefono">Teléfono:</label>
+                    <input type="text" class="form-control" name="telefono" id="telefonoPerfil" onkeypress="return soloNumeros(event)">
+                </div>
+                <div class="form-group">
+                    <label for="Celular">Celular:</label>
+                    <input type="text" class="form-control" name="celular" id="celularPerfil" onkeypress="return soloNumeros(event)" required>
+                </div>
+                <div class="form-group">
+                    <label for="Direccion">Dirección:</label>
+                    <input type="text" class="form-control" name="direccion" id="direccionPerfil" required>
+                </div>   
+                <div class="form-group">
+                    <label for="clavePerfil">Contraseña:</label>
+                    <input id="clavePerfil" type="text" class="form-control" aria-describedby="basic-addon1" required>                    
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center>
+                <button type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar cambios</button>
+                <button id="limpiarUs" type="reset" class="btn btn-warning"><i class="fa fa-trash"></i>&nbsp;&nbsp;Limpiar</button>
+            </center>
+        </div>
+    </form>
+</div>
+
+<script src="controladores/usuarios/perfil.js"></script>

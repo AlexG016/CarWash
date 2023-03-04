@@ -1,0 +1,75 @@
+<div class="card">
+    <div class="card-header" style="background-color: #273b7a; color: white;">
+        <span><i class="fa fa-cubes"></i>&nbsp;&nbsp;Inventario</span>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped table-bordered dt-responsive nowrap" style="width:100%; cursor: pointer;" id="tblinventario" border="1">
+            <thead>
+                <tr class="text-center">
+                    <th></th>
+                    <th>Id</th>
+                    <th>Producto/Servicio</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>PrecioCosto</th>
+                    <th>PVP</th>
+                    <th>Imagen</th>
+                    <th>Tipo</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-cogs"></i>&nbsp;&nbsp;Editar Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="frmEditarProducto" onsubmit="editarProducto(event.preventDefault())">
+                    <center><img id="imagenProducto" width="120px" height="120px"></center>
+                    <div class="form-group">
+                        <label for="nombreProducto">Nombre del Producto:</label>
+                        <input type="text" class="form-control" name="nombre" id="nombreProducto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionProducto">Descripcion:</label>
+                        <textarea id="descripcionProducto" class="form-control" rows="2" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidadProducto">Cantidad:</label>
+                        <input type="number" class="form-control" min="0" name="cantidad" id="cantidadProducto" required>
+                    </div>                
+                    <div class="form-group">
+                        <label for="precioCosto">Precio Costo:</label>
+                        <input type="number" class="form-control" min="0" step="any" id="precioCosto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="precioVenta">PVP:</label>
+                        <input type="number" class="form-control" min="0" step="any" id="precioVenta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="precioVenta">Imagen:</label>
+                        <input type="file" class="form-control" id="imagen" accept="image/png, .jpeg, .jpg, image/gif" onchange="guardarImagen()">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button form="frmEditarProducto" type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar cambios</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="controladores/productos/inventario.js"></script>

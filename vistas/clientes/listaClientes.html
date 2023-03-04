@@ -1,0 +1,78 @@
+<div class="card">
+    <div class="card-header" style="background-color: #273b7a; color: white;">
+        <span><i class="fa fa-users"></i>&nbsp;&nbsp;Lista de Clientes</span>
+    </div>
+    <div class="card-body">
+        <table class="display responsive nowrap" style="width:100%; cursor: pointer;" id="tblclientes" border="1">
+            <thead>
+                <tr class="text-center">
+                    <th></th>
+                    <th>Id</th>
+                    <th>IdUsuario</th>
+                    <th>IdRol</th>
+                    <th>Cédula</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Celular</th>
+                    <th>Dirección</th>
+                    <th>Rol</th>
+                    <th>Clave</th>
+                    <th>Latitud</th>
+                    <th>Longitud</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-user-edit"></i>&nbsp;&nbsp;Editar Cliente</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="frmEditarUsuario" onsubmit="editarCliente(event.preventDefault())">
+                    <div class="form-group">
+                        <label for="Nombre">Nombres:</label>
+                        <input type="text" class="form-control" name="nombre" id="nombreUs" onkeypress="return soloLetras(event)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Apellido">Apellidos:</label>
+                        <input type="text" class="form-control" name="apellido" id="apellidoUs" onkeypress="return soloLetras(event)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Cedula">Cédula de identidad o RUC:</label>
+                        <input type="text" class="form-control" name="cedula" id="cedulaUs" onkeypress="return soloNumeros(event)" required>
+                    </div>                
+                    <div class="form-group">
+                        <label for="Telefono">Teléfono:</label>
+                        <input type="text" class="form-control" name="telefono" id="telefonoUs" onkeypress="return soloNumeros(event)">
+                    </div>
+                    <div class="form-group">
+                        <label for="Celular">Celular:</label>
+                        <input type="text" class="form-control" name="celular" id="celularUs" onkeypress="return soloNumeros(event)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Direccion">Dirección:</label>
+                        <input type="text" class="form-control" name="direccion" id="direccionUs" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button form="frmEditarUsuario" type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar cambios</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="controladores/clientes/listaClientes.js"></script>

@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header" style="background-color: #273b7a; color: white;">
+        <span><i class="fa fa-cube"></i>&nbsp;&nbsp;Nuevo Producto</span>        
+    </div>
+    <form onsubmit="guardarProducto(event.preventDefault())">
+        <div class="card-body">
+            <center><img src="dist/img/productos.png" width="120px" height="120px"></center>
+            <h5 class="text-center"><br>Porfavor ingrese toda la información del nuevo producto</h5>
+            <div class="container">
+                <div class="form-group">
+                    <label for="nombreProducto">Nombre del Producto:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombreProducto" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionProducto">Descripcion:</label>
+                    <textarea id="descripcionProducto" class="form-control" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="cantidadProducto">Cantidad:</label>
+                    <input type="number" class="form-control" min="0" name="cantidad" id="cantidadProducto" required>
+                </div>                
+                <div class="form-group">
+                    <label for="precioCosto">Precio Costo:</label>
+                    <input type="number" class="form-control" min="0" step="any" id="precioCosto" required>
+                </div>
+                <div class="form-group">
+                    <label for="precioVenta">PVP:</label>
+                    <input type="number" class="form-control" min="0" step="any" id="precioVenta" required>
+                </div>
+                <div class="form-group">
+                    <label for="precioVenta">Imagen:</label>
+                    <input type="file" class="form-control" id="imagen" accept="image/png, .jpeg, .jpg, image/gif" onchange="guardarImagen()">
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center>
+                <button type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar Producto</button>
+                <button id="limpiarProducto" type="reset" class="btn btn-warning"><i class="fa fa-trash"></i>&nbsp;&nbsp;Limpiar</button>
+            </center>
+        </div>
+    </form>
+</div>
+
+<script src="controladores/productos/nuevoProducto.js"></script>

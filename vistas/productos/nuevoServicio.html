@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header" style="background-color: #273b7a; color: white;">
+        <span><i class="fa fa-cogs"></i>&nbsp;&nbsp;Nuevo Servicio</span>        
+    </div>
+    <form onsubmit="guardarServicio(event.preventDefault())">
+        <div class="card-body">
+            <center><img src="dist/img/servicios.png" width="120px" height="120px"></center>
+            <h5 class="text-center"><br>Porfavor ingrese toda la información del nuevo servicio</h5>
+            <div class="container">
+                <div class="form-group">
+                    <label for="nombreServicio">Nombre del Servicio:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombreServicio" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionServicio">Descripcion:</label>
+                    <textarea id="descripcionServicio" class="form-control" rows="2" required></textarea>
+                </div>               
+                <div class="form-group">
+                    <label for="precioCosto">Precio Costo:</label>
+                    <input type="number" class="form-control" min="0" step="any" id="precioCosto" required>
+                </div>
+                <div class="form-group">
+                    <label for="precioVenta">PVP:</label>
+                    <input type="number" class="form-control" min="0" step="any" id="precioVenta" required>
+                </div>
+                <div class="form-group">
+                    <label for="precioVenta">Imagen:</label>
+                    <input type="file" class="form-control" id="imagen" accept="image/png, .jpeg, .jpg, image/gif" onchange="guardarImagen()">
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <center>
+                <button type="submit" class="btn btn-success"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar Servicio</button>
+                <button id="limpiarServicio" type="reset" class="btn btn-warning"><i class="fa fa-trash"></i>&nbsp;&nbsp;Limpiar</button>
+            </center>
+        </div>
+    </form>
+</div>
+
+<script src="controladores/productos/nuevoServicio.js"></script>
